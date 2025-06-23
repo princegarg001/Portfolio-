@@ -1,2 +1,1 @@
-# Portfolio-
-A brief explanation about Myself
+This is my personal developer portfolio website, designed to showcase my technical skills, professional experience, and major projects in a clean and visually appealing format. The portfolio is fully responsive and built using HTML5, CSS3, Bootstrap 5, and vanilla JavaScript. It features multiple sections including a hero banner, services offered, project highlights, and a functional contact form. The website demonstrates a strong understanding of frontend layout design, component structuring, and user interface aesthetics.

@@ -1,0 +1,57 @@
+/*.Bannerbgimage {
+  height: 100vh;
+  background: url("images/5652030.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}*/
+
+.service-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+
+
+/* ========== New background for all sections except home ========== */
+
+
+/* Optional dark overlay for better contrast */
+section:not(.Bannerbgimage)::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* adjust for darker/lighter effect */
+  z-index: 0;
+}
+
+/* Ensure actual content appears above the overlay */
+section:not(.Bannerbgimage) > * {
+  position: relative;
+  z-index: 1;
+}
+
+.about-img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.section-heading {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#about ul li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#about a:hover {
+  text-decoration: underline;
+}

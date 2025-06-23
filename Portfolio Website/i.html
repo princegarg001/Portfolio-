@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prince Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* -------------------  HERO / HOME  ------------------- */
+    .Bannerbgimage {
+      height: 100vh;
+      background: url("/images/5652030.webp") center center/cover no-repeat;
+      position: relative;
+    }
+    .Bannertext {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: antiquewhite;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .bannertitle {
+      font-size: 4rem;
+    }
+    .bannerdesc {
+      font-size: 2rem;
+    }
+
+    /* -------------------  GLOBAL SECTION STYLES  ------------------- */
+    section {
+      position: relative;
+      overflow: hidden;
+    }
+    .section-heading {
+      font-weight: 700;
+    }
+
+    /* Gradient backgrounds for each section (except home) */
+    .bg-about {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #ffffff;
+    }
+    .bg-services {
+      background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    }
+    .bg-portfolio {
+      background: linear-gradient(135deg, #fd746c 0%, #ff9068 100%);
+    }
+    .bg-contact {
+      background: linear-gradient(135deg, #42e695 0%, #3bb2b8 100%);
+      color: #ffffff;
+    }
+
+    /* Optional parallax effect on large screens */
+    @media (min-width: 992px) {
+      .bg-about,
+      .bg-services,
+      .bg-portfolio,
+      .bg-contact {
+        background-attachment: fixed;
+      }
+    }
+
+    /* -------------------  SERVICES CARD  ------------------- */
+    
+    .service-card {
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #ffffff;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* -------------------  FOOTER  ------------------- */
+    .footer {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .footer-icons a {
+      color: #ffffff;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    .footer-icons a:hover {
+      color: #0dcaf0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================  NAVBAR  ================ -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Prince Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================  HERO / HOME  ================ -->
+<section class="Bannerbgimage" id="Home">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 Bannertext">
+        <h2 class="bannertitle">Hi There!! I'm Prince Garg</h2>
+        <p class="bannerdesc">Full Stack Developer</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================  ABOUT  ================ -->
+<section class="section-bg text-white" id="about"
+  style="padding-top: 120px; padding-bottom: 100px; min-height: 100vh; scroll-margin-top: 100px;">
+  <div class="container">
+    <h1 class="text-center mb-5 section-heading">About Me</h1>
+    <div class="row align-items-center">
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img src="/images/Back-end-Developer.jpg" alt="Back-end Developer" class="img-fluid rounded shadow-lg about-img">
+      </div>
+      <div class="col-md-7">
+        <p class="lead mb-4">I'm a second-year B.Tech CSE student at <strong>The NorthCap University</strong>, specializing in full-stack development. I enjoy solving real‑world problems, optimizing UI performance, and streamlining database interactions.</p>
+        <div class="row">
+          <div class="col-sm-6 mb-3">
+            <ul class="list-unstyled">
+              <li><strong>Name:</strong> Prince Garg</li>
+              <li><strong>Age:</strong> 19</li>
+              <li><strong>Occupation:</strong> Full Stack Developer</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <ul class="list-unstyled">
+              <li><strong>Technologies Exploring:</strong> MERN, System Design, DevOps</li>
+              <li><strong>Resume:</strong> <a href="/css/assets/Resume (1).pdf" class="text-warning text-decoration-none">Click Here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================  SERVICES  ================ -->
+<section class="py-5 section-bg" id="services" style="scroll-margin-top: 100px;">
+
+<div class="container">
+    <h2 class="text-center mb-5 section-heading">Services</h2>
+    <div class="row g-4 justify-content-center">
+      <!-- WEB DEV -->
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm service-card">
+          <img src="images/Future-Of-Web-Development-1-scaled.webp" class="card-img-top service-img mx-auto mt-3" alt="Web Development Icon">
+          <div class="card-body">
+            <h5 class="card-title">Web Developer</h5>
+            <p class="card-text">Building responsive and scalable websites using modern technologies.</p>
+          </div>
+        </div>
+      </div>
+      <!-- APP DEV -->
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm service-card">
+          <img src="images/th.jpeg" class="card-img-top service-img mx-auto mt-3" alt="App Development Icon">
+          <div class="card-body">
+            <h5 class="card-title">App Developer</h5>
+            <p class="card-text">Creating modern mobile apps with Flutter or React Native.</p>
+          </div>
+        </div>
+      </div>
+      <!-- UI/UX -->
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm service-card">
+          <img src="images/th (1).jpeg" class="card-img-top service-img mx-auto mt-3" alt="UI/UX Design Icon">
+          <div class="card-body">
+            <h5 class="card-title">UI/UX Designer</h5>
+            <p class="card-text">Designing intuitive and elegant user interfaces.</p>
+          </div>
+        </div>
+      </div>
+      <!-- BACKEND -->
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm service-card">
+          <img src="images/th (2).jpeg" class="card-img-top service-img mx-auto mt-3" alt="Backend Icon">
+          <div class="card-body">
+            <h5 class="card-title">Backend Engineer</h5>
+            <p class="card-text">Building REST APIs with Spring Boot and Node.js.</p>
+          </div>
+        </div>
+      </div>
+      <!-- DATABASE -->
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm service-card">
+          <img src="images/th (3).jpeg" class="card-img-top service-img mx-auto mt-3" alt="Database Icon">
+          <div class="card-body">
+            <h5 class="card-title">Database Designer</h5>
+            <p class="card-text">Designing scalable databases using SQL and NoSQL.</p>
+          </div>
+        </div>
+      </div>
+      <!-- DEVOPS -->
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm service-card">
+          <img src="images/th (4).jpeg" class="card-img-top service-img mx-auto mt-3" alt="DevOps Icon">
+          <div class="card-body">
+            <h5 class="card-title">DevOps Enthusiast</h5>
+            <p class="card-text">Docker, CI/CD pipelines, and cloud deployment workflows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================  PORTFOLIO  ================ -->
+<style>
+  /* Hover animation for project cards */
+  .project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  }
+</style>
+
+<section class="py-5 bg-portfolio" id="project" style="scroll-margin-top: 120px; padding-top: 100px;">
+  <div class="container">
+    <h2 class="text-center mb-5 section-heading text-white">Projects</h2>
+
+    <!-- First Row -->
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm project-card h-100">
+          <img src="/images/th (5).jpeg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Traffic Analytics API</h5>
+            <p class="card-text">A robust Node.js backend API for tracking and analyzing website traffic. Built with Express, MongoDB, and WebSockets for real-time analytics.</p>
+            <a href="https://github.com/princegarg001/Traffic-Analytics" class="btn btn-outline-primary" target="_blank">View Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm project-card h-100">
+          <img src="/images/travel_booking_forms_Free14-06-2017_1026392064.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Travel Trip Form Registration</h5>
+            <p class="card-text">This project is a simple PHP-based web form that allows users to submit their travel registration details, which are stored in a MySQL database.</p>
+            <a href="https://github.com/princegarg001/Travel-Trip-Form-Registartion-" class="btn btn-outline-primary" target="_blank">View Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm project-card h-100">
+          <img src="/images/Screenshot 2025-06-23 100104.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">OptiNova-AI</h5>
+            <p class="card-text">he AI Cost Optimization Advisor Agent is a FinOps-focused intelligent consultant built using Lyzr Studio</p>
+            <a href="https://github.com/princegarg001/OptiNova-AI" class="btn btn-outline-primary" target="_blank">View Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row (Centered) -->
+    <div class="row g-4 justify-content-center mt-4">
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm project-card h-100">
+          <img src="/images/Smart-Farming-IoT-1200x600.png" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Smart Farming Monitoring</h5>
+            <p class="card-text">This project is a Spring Boot-based backend application demonstrating JWT-based authentication and role-based authorization for Admin and User roles.</p>
+            <a href="https://github.com/princegarg001/SmartFarming-Monitoring" class="btn btn-outline-primary" target="_blank">View Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm project-card h-100">
+          <img src="/images/eCommerce-Trends-featured-1024x683.png" class="card-img-top" alt="Project 5">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Voxcart</h5>
+            <p class="card-text">VoxCart is a cutting-edge AI-powered e-commerce platform that leverages a multi-agent architecture to provide hyper-personalized product recommendations and voice-driven interactions.</p>
+            <a href="https://github.com/princegarg001/Voxcart" class="btn btn-outline-primary" target="_blank">View Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- = ================  CONTACT  ================ -->
+<section class="py-5 bg-contact" id="contact">
+  <div class="container">
+    <h2 class="text-center mb-5 section-heading">Contact</h2>
+    <form action="https://formspree.io/f/xkgbqgje" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-light">Send</button>
+    </form>
+
+    <!-- 🔽 Social icons moved into contact -->
+    <div class="footer-icons text-center mt-5">
+      <a href="https://www.linkedin.com/in/prince-garg-803aa8288/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/princegarg001" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://instagram.com/princegarg" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://mail.google.com/mail/u/0/" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================  FOOTER  ================ -->
+<footer class="footer">
+  <p>&copy; 2025 Prince Garg. All Rights Reserved.</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
